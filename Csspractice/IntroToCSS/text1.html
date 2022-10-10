@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=hi, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+/*text decoration takes 4 values 
+underline,overline,line-through,none*/
+    <style>
+        .content {
+            background-color: firebrick;
+            color: white;
+        }
+
+        .part1 {
+            text-align: left;
+            text-decoration: underline;
+        }
+
+        .part2 {
+            text-align: center;
+            text-decoration: overline;
+
+        }
+
+        .part3 {
+            text-align: center;
+            text-decoration: line-through;
+        }
+        /*text shadow
+        takes values x,y,z with unit of measurement px
+        x-axis control movement along x as 
+        y-axis controls movement along y axis
+        z-axis controls the contrast of the shadow z axis
+        */
+        .box {
+            text-decoration: none;
+            text-shadow: 10px 10px 12px blue;
+        }
+        /*font-style it takes italic,normal*/
+        /*font-weight it takes normal,bold then in numbering to add more thickness to the boldness*/
+        /*font-size uses measurement mostly in (px)*/
+        /*font-family (Algwerian,Courier,mono)is used for different font styling text*/
+        /*text-transformation*/
+        .new1 {
+            text-transform: capitalize;
+            font-style:normal;
+            font-weight: 100px;
+            font-size: 50px ;
+            font-family:'Syne Mono';
+        }
+        .new2 {
+            text-transform: lowercase;
+        }
+        .new3 {
+            text-transform: uppercase;
+        }
+        .new4{
+            text-transform: none;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Text Styling</h1>
+    <div class="content">
+        <p class="part1">I am align to left.</p>
+        <p class="part2">I am align to right.</p>
+        <p class="part3">I am align to center.</p>
+    </div>
+    <div class="box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Sit at reprehenderit cum officia ab culpa doloribus.</p>
+        <p>Sit at reprehenderit cum officia ab culpa doloribus.</p>
+        <p class="new1">I am in capitalize case.</p>
+        <p class="new2">I am in lower case sit.</p>
+        <p class="new3">I am in upper case.</p>
+        <p class="new4">I am in default case.</p>
+        
+    
+    </div>
+</body>
+</html>

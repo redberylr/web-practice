@@ -1,0 +1,60 @@
+/*  
+#syntax
+
+selector {
+    property: value;
+    attribut: value;
+}
+
+SELECTORS
+- basic selectors
+    - element
+    - ID
+    - class
+- combining selectors
+- attribute selectors
+- Pseudo selectors
+- Pseudo classes
+
+*/
+
+.container {
+    box-shadow: 1px 1px 10px #00f;
+    border: 5px dashed green;
+    border-radius: 25px 0 5px 10px;
+    padding: 30px 10px;
+    margin: 5px;
+}
+
+.container p {
+    /* background-color: hotpink; */
+    /* color:  */
+    font-size: 2rem;
+    font-weight: 900;
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;
+    text-transform: uppercase;
+    text-decoration: line-through;
+    text-shadow: 1px 5px 5px #f00;
+}
+
+
+
+a:visited {
+    color: red
+}
+
+
+a:link {
+    color: hotpink
+}
+
+a:hover {
+    color: pink;
+}
+
+
+a:active {
+    color: blue;
+}

@@ -1,0 +1,47 @@
+.main{
+    background-color:#79242a;
+}
+h1{
+    color:#34ffaa;
+}
+#beta{
+    color:#000;
+    background-color:rgba(69, 0, 90, 0.1);
+}
+.section{
+    color:hsla(107,80%,70%,1);
+}
+.section{
+    background-color:rgba(200,16,126,1);
+}
+
+#section2{
+    color:rgb(200,0,90,0.6);
+    background-image:url('word.jfif');
+    background-size:cover;
+    background-repeat:no-repeat;
+    border-radius:50px 50px 50px 50px;
+    width:300px;
+    height:300px;
+    font-size:10px;
+}
+.section3{
+    color:hsl(167,60%,50%);
+    background-image:url('word.jfif');
+    background-size:contain;
+    background-repeat:repeat;
+}
+#section4{
+    background-color:rgba(190,209,2,0.2);
+    width:p300x;
+    height:600vh;
+   
+}
+#section5{
+    color:#3478dc;
+    background-image:url('word.jfif');
+    background-size:contain;
+    background-repeat:repeat-y;
+    width:100px;
+   
+}

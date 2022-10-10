@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .list{
+            padding: 10px;
+            width: 70%;
+            list-style-type: circle;
+            list-style-position: inside;
+
+        }
+        .list li{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #efefef;
+            margin: 2px;
+        }
+        .close{
+            color: #f00;
+            padding: 5px;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+        }
+        .close:hover{
+            cursor: pointer;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML DOM</h1>
+    <input type="text" placeholder="Enter something" name="myInput">
+
+    <ul class="list"></ul>
+    <script src="dom.js"></script>
+</body>
+
+</html>

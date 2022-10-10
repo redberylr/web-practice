@@ -1,0 +1,32 @@
+p{
+    background-color:#ccc;
+    padding: 10px;
+}
+/*
+selector is what points to the element you want to style
+simple selector
+element
+id
+clss
+combinators (select elements based on specific relationship) 
+pseudo selectors(select element based on certain state)
+attribute selectors(select element based in certain attribute)
+pseudo-element selector (select and style part of an element)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/

@@ -1,0 +1,248 @@
+
+/* 
+CSS SYNTAX
+selector {
+  property: value;
+  property: value;
+}
+
+------ selectors------------
+1. simple selecors (element, id, class)
+  1 - element selector
+  2 - id selector
+  3 - class selector
+2. Combinator selectors (select elements based on a specific relationship between them)
+3. Pseudo-class selectors (select elements based on a certain state)
+4. Pseudo-elements selectors (select and style a part of an element)
+5. Attribute selectors (select elements based on an attribute or attribute value) 
+
+*/
+
+/* p{
+    color:rgb(247, 15, 247);
+} */
+#first{
+   font-weight:bolder;
+    color:mediumslateblue;
+}
+.umar {
+    color:rgba(200,0,100,0.3);
+}
+#first,.umar,.section {
+    background-color: indigo;
+}
+/*Descendant selector youll be selecting one element to style*/
+
+.section p {
+    color:white;
+}
+.section2 p:nth-child(odd) {
+    color:hex();
+}
+div[class=main] {
+  color:green 
+}
+input[type=email] {
+  padding:20px;
+}
+/*HEXA DECIMAL(HEX)
+it starts from 0-f(16)
+1,2,3,4,5,6,7,8,9,a,b,c,d,e,f
+it can be 3 or 6 RGB RRGGBB*/
+.umar{
+  background-color:#878653;
+  font-weight:bolder;
+}
+
+ /*rgb it starts from 0-255 
+  it has commma in between the three colors
+  note you can add a to RGB+A() to add
+  glassy bacground and
+  0-1 it ia decimal 0.2,0.13etc 
+  so it will be in the form of four properties
+  in the bracket eg (0,255,0,0.22) */
+#first{
+  background-color:rgba(0,0,255,0.4);
+}
+/*
+heu saturation lightness HSL
+HSL
+HEU----------
+can take 0-360 degree,
+0-119 is red,120-239 green,240-360 blue
+SATURATION --------
+takes percentage
+from 0-100% 0% shade of grey,100% full color
+LIGHTNESS ------
+takes percentage too from 0-100%
+0% is black,50% is neigther white nor black,
+100% white 
+you can also add A to HSL=HSLA*/
+.main{
+  background-color:hsla(200,30%,60%,0.5);
+}
+/*PADDING 
+dont exceed 20 pixels
+it does'nt have a range*/
+#first{
+  padding: 25px;
+}
+/*OPACITY
+we you use opacity to achieve transparency eg
+background transparency
+it takes a value from 0 to 1
+   
+*/
+.main{
+  background-color:hsla(0,100,50,0.8);
+  padding: 25px;
+ 
+}
+/*
+image attachment to background
+you use backgroun-image : and takes the function 
+url'(the foldername/image.extension)'
+background-size is aproperty that has a function 
+CONTAIN(is  when you want the full image)
+the property COVER(is when you want the image to cover the background)
+background-repeat is a property that has 4 values
+it takes each at a time no-repeat,repeat,repeat-x,repeat-y*/
+.main{
+  background-image: url('boy.jpg');
+  background-size:contain;
+  background-repeat:no-repeat;
+
+}/*
+opacity take value from 0 to 1
+it is for trans parency*/
+.out{
+  opacity:4;
+}
+/*
+units of measurement in css 
+it can be width,height,padding.
+(css units)
+percentage-%
+inches-in
+em
+pixels-px
+centimeter-cm
+millimeter-mm
+point-pt
+viewpoint-vh
+you can use any of them
+at the same time but normally
+ %,vh,vw in terms of width & height
+but when it comes to 
+boarder,padding,margiin 
+we use px pixels
+*/
+.in{
+    background-color:black;
+    width:1000%;
+    height:500vh;
+}
+/*BORDER:by default is black
+you have to give it a measurement 
+before styling
+TAKE NOTE OF
+border-width:12px;
+border-style:groove;
+border-color:blue;
+width:400px;
+height:40vh;
+*/
+
+.in{
+  border-width:12px;
+  border-style:groove;
+  border-color:blue;
+  width:400px;
+  height:40vh;
+  font-weight:bold;
+}
+/*
+BORDER SHORTCUT
+you can write everything on one line
+first comes 
+border,
+:,
+border width (px)
+,border-style
+,border-color,
+;
+ALL IN ONE LINEAS A STATEMENT.
+BORDER STYLES--
+dotted-defines dotted border
+DASHED-defines a dashed border
+SOLID-defines a solid border
+DOUBLE-defines a double border
+GROOVE-defines a 3D grooved border
+RIDGE-defines a 3d ridge
+INSET-dfines a 3D inset border
+PUTSET-defines a 3D outset border
+NONE-defines no border
+HiDDEN-defines a hidden border
+*/
+.in{
+  border:2px groove red;
+}
+/*
+TO APPLY CORNERS
+border 
+there are 3 ways to give it values 1,2,4 like this 
+border-radius:40x;
+ 1 value it will apply to all corners
+or 
+border-radius:50px 0;
+ 2 value it will apply to diagonal corners
+or
+ border-radius:50px 10px 10px 100px;
+ it will apply to all corners
+*/
+
+/*
+HOW TO APPLY A BACGROUND WITH BORDER LINES
+AND A PLAIN BLACK BACKGROUND OR ANY COLOR
+when you have an empty div 
+you have to add width and hight to see something 
+else you write something and 
+then background color then border radius*/
+.out{
+  background-color:rgba(0,204,100,0.5);
+  border-radius:50px 0;
+}
+/*
+To create a CIRCLE you will put
+to have equal circle + width and height(equal measurements)
+to have equal circle
+TO WRITE IT.
+50% for the border-radius
+*/
+.top{
+  background-color:rgba(11, 240, 22, 0.5);
+  Width:300px;
+  height:300px;
+  border-radius:50%;
+}
+/*FONTS
+this is for styling text
+there has to be 
+font-size
+its for adjusting the size of the text you have 
+from small to big.
+font-family-----
+use it to set the font family any font of writing the name
+you can import it too e.g
+
+font-weight -----
+it has different options than
+font-style 
+first make sure your pointer inbetween 
+colon and semi colon press control,space
+you will see suggestion ns syles 
+to add boldness,leave it normal.
+font-style---
+it is for text styling 
+italic,normal,bold etc 
+*/

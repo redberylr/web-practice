@@ -1,0 +1,15 @@
+.list{
+    padding:10px;
+    width:70%;
+    list-style-type:circle;
+    list-style-position:inside;
+}
+
+.list li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #efefef;
+    margin: 2px;
+}

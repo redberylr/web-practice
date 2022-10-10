@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Introduction</title>
+<style>
+    .content{
+        font-weight: bold;
+    }
+/*element selector*/
+    h1{
+        color:navy;
+    }
+
+/*id selector*/
+
+#myID{
+    color:red;
+}
+#unique{
+    color:maroon;
+}
+/*class selector*/
+.content{
+    background-color: aqua ;
+    border: 4px dashed red;
+}
+.par{
+    color: blue;
+    font-weight:bolder;
+}
+
+/*combinators*/
+h2, h3, h4{
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: line-through;
+}
+p, #unique, .content{
+    text-shadow: 2px 2px 6px red;
+}
+</style>
+
+<link rel="stylesheet" href="">
+</head>
+<body>
+
+    <h1 style="text-decoration: underline;">Introduction TO CSS</h1>
+    
+    <div class= "content" style= "background-color:aqua;">
+        <p class="par">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, praesentium!</p>
+        <p id="myID" >Veritatis ullam, nesciunt inventore ea magnam veniam cumque voluptatum minus?</p>
+        <p class="par">Quaerat, adipisci unde maiores alias veniam facere dolorum sunt nam!</p>
+        <p id="unique">Culpa labore est nobis dolor exercitationem laborum corrupti veritatis fugiat.</p>  
+    </div>
+
+    <div class="box">
+        <h2>Sub Heading</h2>
+        <h3>New Section</h3>
+        <h4>Some Sub Heading</h4>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores, deserunt.</p>
+        <p>In qui ipsum blanditiis suscipit, dolor doloremque. At, vel. Sed.</p>
+        <p>Illum, vitae esse qui quibusdam tempora repudiandae tempore aperiam ratione!</p>
+    </div>
+</body>
+</html>

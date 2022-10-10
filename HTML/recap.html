@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>HTML Recap</title>
+	</head>
+	<body id="top">
+		<h1>Smarter</h1>
+		<h6>Smarter</h6>
+		
+		<p>This is some information <br /> enclosed in a paragragh</p>
+		         
+		<hr />
+		<p>This is some random text to style, <strong>this is bolded text</strong> and this is <em>italic text</em> with some emphasis</p>
+		
+		<h4>Un-ordered list</h4>
+		<ul>
+			<li>Apple</li>
+			<li>Banana</li>
+			<li>Cashew</li>
+		</ul>
+		
+		<h4>Ordered list</h4>
+		<ol>
+			<li>Apple</li>
+			<li>Banana</li>
+			<li>Cashew</li>
+		</ol>
+		
+		<h4>Description list</h4>
+		<dl>
+			<dt>Computer:</dt>
+			<dd>An electronic device/machine that accept data as input, process the data, and provide information as an output.</dd>
+			
+			<dt>Noun:</dt>
+			<dd>name of person, animal, place or thing.</dd>
+			
+		</dl>
+		
+		<h4>Nested List</h4>
+		
+		<ul>
+			<li>Tea:
+				<ol>
+					<li>Black Tea</li>
+					<li>Brown Tea</li>
+					<li>Green Tea</li>
+				</ol>
+			</li>
+			<li>Milk</li>
+			<li>Sugar</li>
+		</ul>
+		
+		<div>This is a text inside a div tag </div>
+		
+		<div>
+			<p>this is some text</p>
+			<p>this is some text</p>
+			<p>this is some text</p>
+		</div>
+		
+		<span>this is some text from span tag<span>
+		
+		<div>this contains some HTML entities &copy; &lt; </div>
+	
+		
+		<img src="blue.jpg" alt="blue fabric" />
+	
+		<h4>HTML Links</h4>
+		<ul>
+			<li>Absolute URL</li>
+			<li>Relative URL</li>
+		</ul> 
+	
+		<p> 
+			some absolute URL
+			<a href="https://www.google.com">click to visit google</a>
+		</p>
+		<p>
+			Some relative URL
+			<a href="rev.html">Click to goto rev page</a>
+			<br />
+			<a href="#top">Click to goto top of the page</a>
+		</p>
+		<p>
+			Link with target
+			<a href="https://twitter.com/" target="_blank">Open twitter on a new tab</a>
+		</p>
+		
+		<p>
+			Link to email address
+			<a href="mailto:alpha@gmail.com">email alpha</a>
+		</p>
+		
+		<h4> HTML Tables</h4>
+		<table border="1" cellspacing="0" cellpadding="0" width="300">
+			<thead>
+				<tr>
+					<th>S/N</th>
+					<th>Full Name</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>Abubakar Abdullah</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Abdullah Musa</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>Isah Abdullah</td>
+				</tr>
+			</tbody>
+		</table>
+		
+		<h4>HTML Audio</h4>
+		<audio controls>
+			<source src="others/salam.mp3" />
+		</audio>
+		
+		<h4>HTML Video</h4>
+		<video controls width="400" height="400">
+			<source src="others/guy.mp4" />
+		</video>
+		
+		<h4>HTML Forms</h4>
+		<form>
+			<div>
+				<label for="name">text input:</label>
+				<input type="text" id="name" placeholder="enter your name" value="" autofocus />
+			</div>
+			
+			<div>
+				<label>
+					Username:
+					<input type="text" placeholder="username">
+				</label>
+			</div>
+			
+			<div>
+				<label>password input:</label>
+				<input type="password" placeholder="enter password" />
+			</div>
+			
+			<div>
+				<label for="date">date input:</label>
+				<input type="date" id="date" required/>
+			</div>
+			
+			<div>
+				<label>number input:</label>
+				<input type="number" required>
+			</div>
+			
+			<div>
+				<label for="email">email input:</label>
+				<input type="email" id="email" />
+			</div>
+			
+			<div>
+				<label for="search">search input:</label>
+				<input type="search" id="search" />
+			</div>
+			
+			<div>
+				<label id="gender">Radio input:</label>
+				Male: <input type="radio" name="gender" value="male" />
+				Female: <input type="radio" name="gender" value="female" />
+			</div>
+			
+			<div>
+				<label for="fruits" id="">Checkbox input</label>
+				Apple: <input type="checkbox" name="fruits" value="apple" id="">
+				Orange: <input type="checkbox" name="fruits" value="orange" id="">
+				Banana: <input type="checkbox" name="fruits" value="banana" id="">
+				Grape: <input type="checkbox" name="fruits" value="grape" id="">
+				Mango: <input type="checkbox" name="fruits" value="mango" id="">
+			</div>
+			
+			<div>
+				<label for="upload">File input<label>
+				<input type="file" name="" id="upload" />
+			</div>
+			
+			<div>
+				<label for="state">Select Option</label>
+				<select name="state">
+					<option value=""> select state </option>
+					<option value="kaduna"> Kaduna </option>
+					<option value="kano"> Kano </option>
+					<option value="abuja"> Abuja </option>
+					<option value="katsina"> Katsina </option>
+					<option value="jigawa"> Jigawa </option>
+				</select>
+			</div>
+			
+			<div>
+				button
+				<input type="button" value="send" />
+				<br>
+				another button
+				<!--type: button, submit -->
+				<button type="button">some button</button>
+				<br/>
+				submit button
+				<input type="submit" value="submit" />
+				<br />
+				hidden input
+				<input type="hidden" value="dsjfknsdlnfndfnc" />
+			</div>
+			
+			<div>
+				<label>Range input</label>
+				<input type="range" />
+			</div>
+			
+			<div>
+				<label>Color input</label>
+				<input type="color" name="color" value="" />
+			</div>
+			
+			<div>
+				<label>TextArea input</label>
+				<textarea rows="8" cols="50"></textarea>
+			</div>
+			
+			<div>
+				HTML Meter
+				<meter min="0" max="100" value="20" >50 %</meter>
+			<div>
+
+		</form>
+		
+		<h4>Semantic elements</h4>
+			
+		<header>Header element use for webste header section</header>
+		<nav>Nav element use for website nav</nav>
+		<main>Main element use for min ection of a website</main>
+		<aside>Aside element use for webside side content</aside>
+		<section>Section element use for website section or grouping content</section>
+		<article>Article element use also for section of a site</article>
+		<footer>Footer element use for website footer</footer>
+		<hgroup>Hgroup element use for grouping heading tags</hgroup>
+		<a href="#top">go to beginning of </a>
+	</body>
+</html>
